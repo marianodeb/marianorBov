@@ -380,6 +380,10 @@ Crea una clase heredando de `Exception` para errores específicos.
 
 ---
 
+## [[Decoradores]]
+
+---
+
 ## [[POO]]
 
 ### **Definición de POO**  

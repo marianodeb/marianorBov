@@ -71,7 +71,7 @@ sudo apt update && sudo apt install ncurses-term
 Agregar al archivo **.bashrc** la siguiente linea:
 
 ```bash
-export TERM=xterm  # o xterm-256color
+export TERM=xterm  # o export TERM=xterm-256color 
 ```
 
 ### 2. Alias recomendado (en máquina LOCAL)
@@ -83,7 +83,9 @@ alias ssh-vm='ssh -t usuario@IP "export TERM=xterm-256color; exec bash"'
 ```
 
 Uso: `ssh-vm` (configura automáticamente terminal compatible)
+
 ### Comandos clave de verificación
+
 - `echo $TERM` → Muestra terminal actual
 - `infocmp` → Verifica capacidades del terminal
 - `toe -a` → Lista terminales disponibles

@@ -38,7 +38,9 @@ Esto creará un subdirectorio llamado venv que contendrá el entorno virtual.
 
 ##### Activar el entorno virtual:
 
-Para comenzar a utilizar el entorno virtual, debes activarlo. La forma de activarlo depende de tu shell. En Bash, por ejemplo, usarías:
+Para comenzar a utilizar el entorno virtual, debes activarlo. 
+La forma de activarlo depende de tu shell  y el nombre del directorio, 
+(eje: `source miproyecto_venv/bin/activate`). En Bash, por ejemplo, usarías:
 
 ```Bash
 source venv/bin/activate

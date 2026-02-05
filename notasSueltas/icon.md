@@ -1,0 +1,62 @@
+Syntax	Description
+- [x]	Unchecked
+- [x]	Checked
+- [>]	Rescheduled
+- [x]	Scheduled
+- [!]	Important
+- [x]	Cancelled
+- [/]	In Progress
+- [x]	Question
+- [x]	Star
+- [n]	Note
+- [x]	Location
+- [x]	Information
+- [I]	Idea
+- [S]	Amount
+- [x]	Pro
+- [c]	Con
+- [b]	Bookmark
+- [x]	Quote
+- [u]	Up
+- [d]	Down
+- [w]	Win
+- [k]	Key
+- [f]	Fire
+- [0]	Speech bubble 0
+- [1]	Speech bubble 1
+- [2]	Speech bubble 2
+- [3]	Speech bubble 3
+- [4]	Speech bubble 4
+- [x]	Speech bubble 5
+- [6]	Speech bubble 6
+- [7]	Speech bubble 7
+- [8]	Speech bubble 8
+- [9]	Speech bubble 9
+
+
+---
+
+
+Syntax	Description
+- [ ]	to-do
+- [/]	incomplete
+- [x]	done
+- [-]	canceled
+- [>]	forwarded
+- [<]	scheduling
+- [?]	question
+- [!]	important
+- [*]	star
+- ["]	quote
+- [l]	location
+- [b]	bookmark
+- [i]	information
+- [S]	savings
+- [I]	idea
+- [p]	pros
+- [c]	cons
+- [f]	fire
+- [k]	key
+- [w]	win
+- [u]	up
+- [d]	down

@@ -50,6 +50,7 @@ $sudo /etc/init.d/ssh stop
 ```
 
 ### Clave/Usuario
+
 Para este modo siempre que uno se conecta debe introducir usuario y clave el nodo de conf es:
 
 **PaswordAuthentication yes**

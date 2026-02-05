@@ -5,6 +5,8 @@
 sudo apt install -y build-essential make
 sudo apt install -y htop tree zip unzip
 sudo apt install -y gcc g++ python3 python3-pip perl ruby
+sudo apt install -y dysk # altervativa mejor al comando df 
+sudo apt install -y git curl 
 ```
 ## Configuracion de **.bashcr**
 
@@ -96,7 +98,7 @@ curl -LO https://github.com/lsd-rs/lsd/releases/download/v1.1.5/lsd-musl_1.1.5_a
 
 pagina: https://github.com/fastfetch-cli/fastfetch
 pagina release: https://github.com/fastfetch-cli/fastfetch/releases
-O descar con curl:
+O descargar con curl:
 
 ```bash
 curl -LO https://github.com/fastfetch-cli/fastfetch/releases/download/2.47.0/fastfetch-linux-amd64.deb
