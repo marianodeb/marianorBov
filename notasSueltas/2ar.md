@@ -1,7 +1,6 @@
 El archivo **/etc/fstab** (del inglés, *file systems table*) es un archivo de configuración en sistemas operativos tipo Unix, como Linux, que contiene información sobre todos los sistemas de archivos disponibles en el sistema.
 Su función principal es definir cómo y dónde se deben montar automáticamente las particiones, discos duros, y otras unidades de almacenamiento durante el arranque del sistema.
 
------
 
 ### Estructura y Sintaxis de fstab
 

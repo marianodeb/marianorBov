@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e19afa2f1b7ccfb4",
+            "id": "f5902c0514b7a759",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GNUlinux/kitty_confi.md",
-                "mode": "source",
+                "file": "GNUlinux/Comandos.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kitty_confi"
-            }
-          },
-          {
-            "id": "fd39943d99681e0f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sin título.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Sin título"
+              "title": "Comandos"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#FF9F00",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,8 +94,9 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "GNUlinux/Comandos.md",
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
@@ -118,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes"
+              "title": "Enlaces entrantes de Comandos"
             }
           },
           {
@@ -181,8 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,30 +181,38 @@
       "obsidian-excalidraw-plugin:Nuevo Bosquejo": false
     }
   },
-  "active": "fd39943d99681e0f",
+  "active": "f5902c0514b7a759",
   "lastOpenFiles": [
-    "GNUlinux/kitty_confi.md",
-    "Sin título.md",
+    "GNUlinux/comandos/nmcli.md",
+    "GNUlinux/Comandos.md",
+    "electricidad/Tablero serie.md",
+    "Electronica/Homelab server.md",
+    "tr.md",
+    "Electronica/ESP32.md",
+    "Electronica/Arduino.md",
+    "Programacion/Lua.md",
+    "Programacion/Programación.md",
+    "Programacion/HTML.md",
+    "Programacion/Git.md",
+    "GNUlinux/comandos/ln.md",
+    "GNUlinux/Bash born again shell.md",
+    "GNUlinux/GNULinux.md",
+    "GNUlinux/terminal_conf.md",
+    "GNUlinux/Wifi test.md",
+    "GNUlinux/REDES.md",
+    "GNUlinux/Raspberrypy.md",
+    "GNUlinux/PATH.md",
+    "GNUlinux/mpd.md",
     "GNUlinux/MiconfiguracionDebian.md",
     "GNUlinux/La línea de comandos de Linux.md",
-    "GNUlinux/confifuracionIP.md",
-    "Programacion/python/EntornoVirtualesPython.md",
-    "Programacion/python/Decoradores.md",
-    "Programacion/Python.md",
-    "Programacion/python/Variables.md",
-    "Programacion/python/Operadores-python.md",
-    "Programacion/PyCharm.md",
-    "Programacion/Git.md",
-    "Excalidraw/tablero serie  2024-08-16 17.13.46.excalidraw.md",
-    "Excalidraw/estufachunkana 2024-06-18 17.08.10.excalidraw.md",
-    "Excalidraw/Drawing 2025-04-12 13.35.57.excalidraw.md",
-    "Excalidraw/Drawing 2025-03-29 11.02.50.excalidraw.md",
-    "Excalidraw/DBFemenino 2025-01-04 15.58.31.excalidraw.md",
-    "Excalidraw/ChuncanaSinHorno 2024-06-19 17.30.17.excalidraw.md",
+    "GNUlinux/kitty_confi.md",
+    "GNUlinux/indentificar_dispositivos.md",
+    "GNUlinux/gpg.md",
+    "GNUlinux/Gestores_de_paketes.md",
+    "Electronica",
     "Sin título.canvas",
     "Sin título 2.base",
     "Sin título.base",
-    "2026-01-13.md",
     "Sin título 1.base"
   ]
 }

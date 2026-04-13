@@ -63,6 +63,18 @@ Un entorno de desarrollo integrado (IDE, por sus siglas en inglés) es un softwa
     
     - **Definición:** Lenguaje de programación interpretado, orientado a objetos y utilizado principalmente para agregar interactividad a páginas web.
     - **Uso:** Esencial en el desarrollo web tanto para el frontend (interacción del usuario) como para el backend (lógica del servidor).
+4. [[Lua]]
+	.
+	. 
+	.
+	. 
+5.  [[Arduino]]    
+    .  
+    .
+    .
+    .
+    
+
 
 #### Lenguajes de Marcado y Estilo
 

@@ -7,13 +7,17 @@ sudo apt install -y htop tree zip unzip
 sudo apt install -y gcc g++ python3 python3-pip perl ruby
 sudo apt install -y dysk # altervativa mejor al comando df 
 sudo apt install -y git curl 
+sudo apt install -y default-jre # java
+sudo apt install -y mpv vlc #reproductores de videos
+
 ```
 ## Configuracion de **.bashcr**
 
 ### Alias
 
 ```
-alias nv='/media/user/bodzzy/AppimagePaketes/nvim-linux-x86_64.appimage'
+alias ff='fastfetch'
+alias nv='~/AppimagePaketes/nvim-linux-x86_64.appimage'
 alias p3='python3'
 alias buscar='sudo apt search'
 alias instalar='sudo apt install'
@@ -25,9 +29,9 @@ alias ld='lsd -l --group-directories-first'
 alias ll='lsd -la'
 #alias lld='ls -la --group-directories-first'
 alias lld='lsd -la --group-directories-first'
-alias nf='neofetch'
+#alias nf='neofetch' desactualizado
 alias e='exit'
-alias act='sudo apt update && sudo apt upgrade'
+alias act='sudo apt update && sudo apt upgrade -y'
 alias eliminar='sudo apt-get --purge remove'
 
 alias gi='git init'
@@ -43,6 +47,9 @@ alias gb='git git branch'
 alias gcl='git clone'
 alias raspby='ssh minimini@192.168.0.27'
 alias pingraspby='ping 192.168.0.27'
+
+# ff ejecuta fastfecth
+ff
 ```
 
 ### Prompt
@@ -62,7 +69,7 @@ chmod u+x nvim-linux-x86_64.appimage
 #### NvChad
 
 Pagina: https://nvchad.com/docs/quickstart/install/
-Si el directorio ~/.config/nvim no esta creado crearlo. Luego clonar el repositorio en ~/.config/nvim
+Si el directorio ~/.config/nvim no esta creado, crearlo. Luego clonar el repositorio en ~/.config/nvim
 
 ```bash
 mkdir -p ~/.config/nvim
@@ -104,7 +111,7 @@ O descargar con curl:
 curl -LO https://github.com/fastfetch-cli/fastfetch/releases/download/2.47.0/fastfetch-linux-amd64.deb
 ```
 
-## BTOP
+## BTOP utilizando
 
 ```bash
 sudo apt install btop -y
@@ -114,6 +121,18 @@ sudo apt install btop -y
 
 ```bash
 sudo apt install ace-of-penguins -y
+```
+
+## gtkpod
+https://snapcraft.io/install/gtkpod/debian
+
+```bash
+sudo apt update
+
+# si no esta instalado snap
+sudo apt install snapd 
+sudo snap install snapd
+sudo snap install gtkpod
 ```
 ## Monitoreos del hard
 
@@ -284,7 +303,65 @@ sudo apt install
 ```
 
 
+---
 
+
+## 🛠️ Guía de Rescate: Bluetooth en Linux
+
+### 1. Verificación de Hardware (¿Está conectado?)
+Antes de instalar nada, hay que ver si el sistema detecta el "fierro".
+* **Comando:** `lsusb`
+* **Qué buscar:** Una línea que diga algo como `Cambridge Silicon Radio` o `Bluetooth Dongle`. 
+* **Tip:** Si no aparece, cambia de puerto USB (los 2.0 suelen ser más compatibles que los 3.0 para estos adaptadores baratos).
+
+### 2. Verificación de Software y Errores
+Para ver si el sistema está intentando usarlo y falla:
+* **Ver logs del sistema:** `dmesg | grep -i bluetooth`
+    * *Errores comunes:* "firmware file not found" o "command tx timeout" (indican falta de drivers o clones chinos).
+* **Verificar bloqueos:** `rfkill list`
+    * Si dice `Soft blocked: yes`, se arregla con: `sudo rfkill unblock bluetooth`.
+
+### 3. Instalación de Drivers y Herramientas
+
+#### Opción A: Sistemas modernos (Tu caso actual)
+```bash
+sudo apt update
+sudo apt install bluetooth bluez bluez-tools bluez-firmware rfkill blueman
+```
+
+#### Opción B: Sistemas antiguos o "viejitos"
+A veces los paquetes tenían otros nombres:
+```bash
+sudo apt install bluez bluez-utils bluez-firmware
+```
+
+### 4. Gestión del Servicio (El "Motor")
+Sin el servicio corriendo, el Bluetooth no existe para el sistema.
+* **Ver estado:** `sudo systemctl status bluetooth`
+* **Activar y arrancar:** `sudo systemctl enable --now bluetooth`
+* **Reiniciar si falla:** `sudo systemctl restart bluetooth`
+
+### 5. Permisos de Usuario
+Fundamental para que tu usuario pueda manejar el adaptador sin ser "root".
+* **Ver tus grupos:** `groups` o `id`
+* **Añadirte al grupo:** `sudo usermod -aG bluetooth $USER`
+* **Verificar cambio:** `grep "bluetooth" /etc/group`
+* *Nota:* Requiere cerrar sesión o reiniciar para que surta efecto.
+
+### 6. Interfaz Gráfica (El Ícono)
+Si el Bluetooth funciona pero no ves el ícono en la barra:
+* **Instalar el gestor:** `sudo apt install blueman`
+* **Lanzarlo manualmente:** Presiona `Alt + F2` y escribe `blueman-applet`, luego Enter.
+* **Abrir el panel de control:** Escribe `blueman-manager` en la terminal o búscalo como "Gestor de Bluetooth".
+
+
+> [!TIP]
+> **Resumen cuando no tenemos instaldo el servicio :**
+> El problema era que el sistema no tenía instalado el servicio (`bluez`) ni el gestor gráfico (`blueman`). Al instalar `bluez-firmware`, le diste las instrucciones necesarias al chip "Cambridge" para que sepa cómo operar en Linux.
+
+¡Cualquier otra duda con la terminal, acá estamos, chamaco!
+
+---
 
 
 

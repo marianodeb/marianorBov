@@ -20,6 +20,8 @@ Ingresar al directorio extraído y usar los siguientes comandos
 ./configure --enable-optimizations
 sudo make altinstall
 sudo apt install python3-pip
+sudo apt install -y default-jre #instalar java
+
 ```
 
 
@@ -899,38 +901,6 @@ sudo umount /media/cdrom
 
 
 
-Comando which - type - find
-Comando which: muestra la ubicación donde está instalado el programa o comando
-Comando type: muestra el tipo de comando que es. Si es binario o propio de la shell
-Comando find: busca la ubicación de un directorio.
-Ejemplo de which y type:
-
-oto@pc:~$ which firefox
-/usr/bin/firefox
-oto@pc:~$ which cmatrix
-/usr/bin/cmatrix
-oto@pc:~$ which cd
-oto@pc:~$ type cd
-cd es una orden interna del shell
-oto@pc:~$ type cp
-cp is /usr/bin/cp
-oto@pc:~$ which cp
-/usr/bin/cp
-
-Ejemplo del comando find
-oto@pc:~$find ruta parámetro criterio
-oto@pc:~$find -name nombre_del_archivo
-oto@pc:~$find -type fd -name nombre_del_archivo
-oto@pc:~$find -zise 10M
-oto@pc:~$find -zise 1G
-oto@pc:~/Escritorio/directorios$ find -type d -name 02_febrero
-./año/2021/02_febrero
-./año/2022/02_febrero
-oto@pc:~/Escritorio/directorios$ find -type f -name mariano*
-./hola/mariano.txt
-oto@pc:~/Escritorio/directorios$
-Comando grep
-permite buscar coincidencias dentro de un archivo
 
 Utilidades de red
 
@@ -1023,61 +993,7 @@ shutdown -r now: reiniciar (1).
 reboot: reiniciar (2).
 logout: cerrar sesión.
 
-Encontrar archivos
 
-
-
-```bash
-find / -name file1: buscar fichero y directorio a partir de la raíz del sistema.
-```
-
-
-```bash
-find / -user user1: buscar ficheros y directorios pertenecientes al usuario ‘user1’.
-```
-
-
-```bash
-find /home/user1 -name \*.bin: buscar ficheros con extensión ‘. bin’ dentro del directorio ‘/ home/user1’.
-```
-
-
-
-find /usr/bin -type f -atime +100: buscar ficheros binarios no usados en los últimos 100 días.
-
-
-
-```bash
-find /usr/bin -type f -mtime -10: buscar ficheros creados o cambiados dentro de los últimos 10 días.
-```
-
-
-
-```bash
-find / -name \*.rpm -exec chmod 755 ‘{}’ \;: buscar ficheros con extensión ‘.rpm’ y modificar permisos.
-```
-
-
-
-```bash
-find / -xdev -name \*.rpm: Buscar ficheros con extensión ‘.rpm’ ignorando los dispositivos removibles como cdrom, pen-drive, etc.…
-```
-
-
-```bash
-locate \*.ps: encuentra ficheros con extensión ‘.ps’ ejecutados primeramente con el command ‘updatedb’.
-```
-
-
-```bash
-whereis halt: mostrar la ubicación de un fichero binario, de ayuda o fuente. En este caso pregunta dónde está el comando ‘halt’.
-```
-
-
-
-```bash
-which halt: mostrar la senda completa (el camino completo) a un binario / ejecutable.
-```
 
 ## Montando un sistema de ficheros
 
@@ -1160,42 +1076,6 @@ mount /dev/sda1 /mnt/usbdisk
 ```
 
 
-Espacio de Disco
-
-```bash
-df -h: mostrar una lista de las particiones montadas.
-```
-
-
-
-```bash
-ls -lSr |more: mostrar el tamaño de los ficheros y directorios ordenados por tamaño.
-```
-
-
-
-```bash
-du -sh dir1: Estimar el espacio usado por el directorio ‘dir1’.
-```
-
-
-
-```
-$du -sk * | sort -rn: mostrar el tamaño de los ficheros y directorios ordenados por tamaño.
-```
-
-
-
-```bash
-rpm -q -a –qf ‘%10{SIZE}t%{NAME}n’ | sort -k1,1n: mostrar el espacio usado por los paquetes rpm instalados organizados por tamaño (Fedora, Redhat y otros).
-```
-
-
-
-```bash
-dpkg-query -W -f=’${Installed-Size;10}t${Package}n’ | sort -k1,1n: mostrar el espacio usado por los paquetes instalados, organizados por tamaño (Ubuntu, Debian y otros).
-```
-
 Usuarios y Grupos
 
 ```bash
@@ -1264,93 +1144,6 @@ newgrp group_name: registra a un nuevo grupo para cambiar el grupo predeterminad
 ```
 
 
-Permisos en Ficheros (Usa ”+” para colocar permisos y ”-” para eliminar)
-
-
-```bash
-ls -lh: Mostrar permisos.
-```
-
-```bash
-ls /tmp | pr -T5 -W$COLUMNS: dividir la terminal en 5 columnas.
-```
-
-
-```bash
-chmod ugo+rwx directory1: colocar permisos de lectura ®, escritura (w) y ejecución(x) al propietario (u), al grupo (g) y a otros (o) sobre el 
-directorio ‘directory1’.
-```
-
-
-```bash
-chmod go-rwx directory1: quitar permiso de lectura ®, escritura (w) y (x) ejecución al grupo (g) y otros (o) sobre el directorio ‘directory1’.
-```
-
-
-
-```bash
-chown user1 file1: cambiar el dueño de un fichero.
-```
-
-
-
-```bash
-chown -R user1 directory1: cambiar el propietario de un directorio y de todos los ficheros y directorios contenidos dentro.
-```
-
-
-
-```bash
-chgrp group1 file1: cambiar grupo de ficheros.
-```
-
-
-
-```bash
-chown user1:group1 file1: cambiar usuario y el grupo propietario de un fichero.
-```
-
-
-
-```bash
-find / -perm -u+s: visualizar todos los ficheros del sistema con SUID configurado.
-```
-
-
-
-```bash
-chmod u+s /bin/file1: colocar el bit SUID en un fichero binario. El usuario que corriendo ese fichero adquiere los mismos privilegios como dueño.
-```
-
-
-
-```bash
-chmod u-s /bin/file1: deshabilitar el bit SUID en un fichero binario.
-```
-
-
-
-```bash
-chmod g+s /home/public: colocar un bit SGID en un directorio –similar al SUID pero por directorio.
-```
-
-
-
-```bash
-chmod g-s /home/public: desabilitar un bit SGID en un directorio.
-```
-
-
-
-```bash
-chmod o+t /home/public: colocar un bit STIKY en un directorio. Permite el borrado de ficheros solamente a los dueños legítimos.
-```
-
-
-
-```bash
-chmod o-t /home/public: desabilitar un bit STIKY en un directorio.
-```
 
 Atributos especiales en ficheros (Usa ”+” para colocar permisos y ”-” para eliminar)
 
@@ -1367,51 +1160,7 @@ lsattr: mostrar atributos especiales.
 
 
 
-Ver el contenido de un fichero
 
-
-cat file1: ver los contenidos de un fichero comenzando desde la primera hilera.
-tac file1: ver los contenidos de un fichero comenzando desde la última línea.
-more file1: ver el contenido a lo largo de un fichero.
-less file1: parecido al commando ‘more’ pero permite salvar el movimiento en el fichero así como el movimiento hacia atrás.
-head -2 file1: ver las dos primeras líneas de un fichero.
-tail -2 file1: ver las dos últimas líneas de un fichero.
-tail -f /var/log/messages: ver en tiempo real qué ha sido añadido al fichero.
-
-Manipulación de texto
-
-cat file1 file2 .. | command <> file1_in.txt_or_file1_out.txt: sintaxis general para la manipulación de texto utilizando PIPE, STDIN y STDOUT.
-cat file1 | command( sed, grep, awk, grep, etc…) > result.txt: sintaxis general para manipular un texto de un fichero y escribir el resultado en un fichero nuevo.
-cat file1 | command( sed, grep, awk, grep, etc…) » result.txt: sintaxis general para manipular un texto de un fichero y añadir resultado en un fichero existente.
-grep Aug /var/log/messages: buscar palabras “Aug” en el fichero ‘/var/log/messages’.
-grep ^Aug /var/log/messages: buscar palabras que comienzan con “Aug” en fichero ‘/var/log/messages’
-grep [0-9] /var/log/messages: seleccionar todas las líneas del fichero ‘/var/log/messages’ que contienen números.
-grep Aug -R /var/log/*: buscar la cadena “Aug” en el directorio ‘/var/log’ y debajo.
-sed ‘s/stringa1/stringa2/g’ example.txt: reubicar “string1” con “string2” en ejemplo.txt
-sed ‘/^$/d’ example.txt: eliminar todas las líneas en blanco desde el ejemplo.txt
-sed ‘/ *#/d; /^$/d’ example.txt: eliminar comentarios y líneas en blanco de ejemplo.txt
-echo ‘esempio’ | tr ‘[:lower:]’ ‘[:upper:]’: convertir minúsculas en mayúsculas.
-sed -e ‘1d’ result.txt: elimina la primera línea del fichero ejemplo.txt
-sed -n ‘/stringa1/p’: visualizar solamente las líneas que contienen la palabra “string1”.
-Establecer caracter y conversión de ficheros
-dos2unix filedos.txt fileunix.txt: convertir un formato de fichero texto desde MSDOS a UNIX.
-unix2dos fileunix.txt filedos.txt: convertir un formato de fichero de texto desde UNIX a MSDOS.
-recode ..HTML < page.txt > page.html: convertir un fichero de texto en html.
-recode -l | more: mostrar todas las conversiones de formato disponibles.
-
-Análisis del sistema de ficheros
-
-badblocks -v /dev/hda1: Chequear los bloques defectuosos en el disco hda1.
-fsck /dev/hda1: reparar / chequear la integridad del fichero del sistema Linux en el disco hda1.
-fsck.ext2 /dev/hda1: reparar / chequear la integridad del fichero del sistema ext 2 en el disco hda1.
-e2fsck /dev/hda1: reparar / chequear la integridad del fichero del sistema ext 2 en el disco hda1.
-e2fsck -j /dev/hda1: reparar / chequear la integridad del fichero del sistema ext 3 en el disco hda1.
-fsck.ext3 /dev/hda1: reparar / chequear la integridad del fichero del sistema ext 3 en el disco hda1.
-fsck.vfat /dev/hda1: reparar / chequear la integridad del fichero sistema fat en el disco hda1.
-fsck.msdos /dev/hda1: reparar / chequear la integridad de un fichero del sistema dos en el disco hda1.
-dosfsck /dev/hda1: reparar / chequear la integridad de un fichero del sistema dos en el disco hda1.
-
-Formatear un sistema de ficheros
 
 mkfs /dev/hda1: crear un fichero de sistema tipo Linux en la partición hda1.
 mke2fs /dev/hda1: crear un fichero de sistema tipo Linux ext 2 en hda1.
@@ -1420,88 +1169,6 @@ mkfs -t vfat 32 -F /dev/hda1: crear un fichero de sistema FAT32 en hda1.
 fdformat -n /dev/fd0: formatear un disco flooply.
 mkswap /dev/hda3: crear un fichero de sistema swap.
 
-Trabajo con la SWAP
-
-mkswap /dev/hda3: crear fichero de sistema swap.
-swapon /dev/hda3: activando una nueva partición swap.
-swapon /dev/hda2 /dev/hdb3: activar dos particiones swap.
-Salvas (Backup)
-dump -0aj -f /tmp/home0.bak /home: hacer una salva completa del directorio ‘/home’.
-dump -1aj -f /tmp/home0.bak /home: hacer una salva incremental del directorio ‘/home’.
-restore -if /tmp/home0.bak: restaurando una salva interactivamente.
-rsync -rogpav –delete /home /tmp: sincronización entre directorios.
-rsync -rogpav -e ssh –delete /home ip_address:/tmp: rsync a través del túnel SSH.
-rsync -az -e ssh –delete ip_addr:/home/public /home/local: sincronizar un directorio local con un directorio remoto a través de ssh y de compresión.
-rsync -az -e ssh –delete /home/local ip_addr:/home/public: sincronizar un directorio remoto con un directorio local a través de ssh y de compresión.
-dd bs=1M if=/dev/hda | gzip | ssh user@ip_addr ‘dd of=hda.gz’: hacer una salva de un disco duro en un host remoto a través de ssh.
-dd if=/dev/sda of=/tmp/file1: salvar el contenido de un disco duro a un fichero. (En este caso el disco duro es “sda” y el fichero “file1”).
-tar -Puf backup.tar /home/user: hacer una salva incremental del directorio ‘/home/user’.
-( cd /tmp/local/ && tar c . ) | ssh -C user@ip_addr ‘cd /home/share/ && tar x -p’: copiar el contenido de un directorio en un directorio remoto a través de ssh.
-( tar c /home ) | ssh -C user@ip_addr ‘cd /home/backup-home && tar x -p’: copiar un directorio local en un directorio remoto a través de ssh.
-tar cf – . | (cd /tmp/backup ; tar xf – ): copia local conservando las licencias y enlaces desde un directorio a otro.
-find /home/user1 -name ‘*.txt’ | xargs cp -av –target-directory=/home/backup/ –parents: encontrar y copiar todos los ficheros con extensión ‘.txt’ de un directorio a otro.
-find /var/log -name ‘*.log’ | tar cv –files-from=- | bzip2 > log.tar.bz2: encontrar todos los ficheros con extensión ‘.log’ y hacer un archivo bzip.
-dd if=/dev/hda of=/dev/fd0 bs=512 count=1: hacer una copia del MRB (Master Boot Record) a un disco floppy.
-dd if=/dev/fd0 of=/dev/hda bs=512 count=1: restaurar la copia del MBR (Master Boot Record) salvada en un floppy.
-
-CD-ROM
-
-cdrecord -v gracetime=2 dev=/dev/cdrom -eject blank=fast -force: limpiar o borrar un cd regrabable.
-mkisofs /dev/cdrom > cd.iso: crear una imagen iso de cdrom en disco.
-mkisofs /dev/cdrom | gzip > cd_iso.gz: crear una imagen comprimida iso de cdrom en disco.
-mkisofs -J -allow-leading-dots -R -V “Label CD” -iso-level 4 -o ./cd.iso data_cd: crear una imagen iso de un directorio.
-cdrecord -v dev=/dev/cdrom cd.iso: quemar una imagen iso.
-gzip -dc cd_iso.gz | cdrecord dev=/dev/cdrom –: quemar una imagen iso comprimida.
-mount -o loop cd.iso /mnt/iso: montar una imagen iso.
-cd-paranoia -B: llevar canciones de un cd a ficheros wav.
-cd-paranoia – ”-3”: llevar las 3 primeras canciones de un cd a ficheros wav.
-cdrecord –scanbus: escanear bus para identificar el canal scsi.
-dd if=/dev/hdc | md5sum: hacer funcionar un md5sum en un dispositivo, como un CD.
-
-
-
-Monitoreando y depurando
-
-top: mostrar las tareas de linux usando la mayoría cpu.
-ps -eafw: muestra las tareas Linux.
-ps -e -o pid,args –forest: muestra las tareas Linux en un modo jerárquico.
-pstree: mostrar un árbol sistema de procesos.
-kill -9 ID_Processo: forzar el cierre de un proceso y terminarlo.
-kill -1 ID_Processo: forzar un proceso para recargar la configuración.
-lsof -p $$: mostrar una lista de ficheros abiertos por procesos.
-lsof /home/user1: muestra una lista de ficheros abiertos en un camino dado del sistema.
-strace -c ls >/dev/null: mostrar las llamadas del sistema hechas y recibidas por un proceso.
-strace -f -e open ls >/dev/null: mostrar las llamadas a la biblioteca.
-watch -n1 ‘cat /proc/interrupts’: mostrar interrupciones en tiempo real.
-last reboot: mostrar historial de reinicio.
-lsmod: mostrar el kernel cargado.
-free -m: muestra el estado de la RAM en megabytes.
-smartctl -A /dev/hda: monitorear la fiabilidad de un disco duro a través de SMART.
-smartctl -i /dev/hda: chequear si SMART está activado en un disco duro.
-tail /var/log/dmesg: mostrar eventos inherentes al proceso de carga del kernel.
-tail /var/log/messages: mostrar los eventos del sistema.
-
-Otros comandos útiles
-
-apropos …keyword: mostrar una lista de comandos que pertenecen a las palabras claves de un programa; son útiles cuando tú sabes qué hace tu programa, pero de sconoces el nombre del comando.
-man ping: mostrar las páginas del manual on-line; por ejemplo, en un comando ping, usar la opción ‘-k’ para encontrar cualquier comando relacionado.
-whatis …keyword: muestra la descripción de lo que hace el programa.
-mkbootdisk –device /dev/fd0 `uname -r`: crear un floppy boteable.
-gpg -c file1: codificar un fichero con guardia de seguridad GNU.
-gpg file1.gpg: decodificar un fichero con Guardia de seguridad GNU.
-wget -r www.example.com: descargar un sitio web completo.
-wget -c www.example.com/file.iso: descargar un fichero con la posibilidad de parar la descargar y reanudar más tarde.
-echo ‘wget -c www.example.com/files.iso‘ | at 09:00: Comenzar una descarga a cualquier hora. En este caso empezaría a las 9 horas.
-ldd /usr/bin/ssh: mostrar las bibliotecas compartidas requeridas por el programa ssh.
-alias hh=’history’: colocar un alias para un comando –hh= Historial.
-chsh: cambiar el comando Shell.
-chsh –list-shells: es un comando adecuado para saber si tienes que hacer remoto en otra terminal.
-who -a: mostrar quien está registrado, e imprimir hora del último sistema de importación, procesos muertos, procesos de registro de sistema, procesos activos producidos por init, funcionamiento actual y últimos cambios del reloj del sistema.
-
-
-
-apt-cache show  nombre_programa
-Muestra información del programa 
 
 Soluciones a errores 
 
@@ -1548,17 +1215,6 @@ python
 pylint   marca errores
 format document         abrir paleta con ctrl+shif+p   (minuto_ 32)
 en configuracion (settings) buscar "formatOnSave"  marcar . esto cada ves que se guarda el documento corrige el formato
-
-APP
-neofetch vlc plank git curl wget
-
-telegram zoom jdownloader
-notas de app
-configurar plank (ctrl+click derecho del raton)
-https://jdownloader.org/es/home/index
-antes de instalar jdownloader instalar:
-$sudo apt install -y default-jre
-
 
 
 QEMU:

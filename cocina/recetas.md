@@ -149,6 +149,14 @@
 
 
 ---
+
+## Dulce de leche
+
+2 litros de leche
+440g de azucar (22% del total de la leche)
+2g bicarbonato (1g por litro de leche)
+
+
 ---
 ---
 Recomendaciones para redactar recetas

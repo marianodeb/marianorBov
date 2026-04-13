@@ -43,7 +43,7 @@
 40. **`dirname`** - Muestra el directorio que contiene el archivo. [[dirname]]
 41. **`dmesg`** - Muestra mensajes del kernel. [[dmesg]]
 42. **`du`** - Muestra el uso del espacio en disco para archivos y directorios. [[du-ncdu]]
-43. **`duf`** - Muestra el uso del espacio en disco.
+43. **`duf`** - Muestra el uso del espacio en disco. [[duf]] ✅
 44. **`echo`** - Muestra una línea de texto. [[echo]] ✅
 45. **`ed`** - Editor de texto. [[ed]]
 46. **`egrep`** - Búsqueda de patrones extendidos en archivos. [[egrep]] ✅
@@ -84,7 +84,7 @@
 81. **`killall`** - Envía señales a todos los procesos con un nombre específico.
 82. **`last`** - Muestra el historial de inicio de sesión de los usuarios.
 83. **`less`** - Muestra archivos página por página.
-84. **`ln`** - Crea enlaces simbólicos o duros. [[lnEnlaces]] ✅
+84. **`ln`** - Crea enlaces simbólicos o duros. [[ln]] ✅
 85. **`locate`** - Busca archivos rápidamente usando una base de datos. [[locate]] ✅
 86. **`login`** - Inicia sesión en el sistema.
 87. **`logout`** - Cierra la sesión del usuario.
@@ -104,10 +104,10 @@
 101. **`mount`** - Monta sistemas de archivos. [[mount]] ✅
 102. **`mv`** - Mueve o renombra archivos y directorios. [[mv]] ✅
 103. **`nc`** - Herramienta de red para establecer conexiones y transferencias.
-104. **`ncdu`** - Muestra el uso del espacio en disco para archivos y directorios. [[du-ncdu]] -
+104. **`ncdu`** - Muestra el uso del espacio en disco para archivos y directorios. [[du-ncdu]] ✅-
 105. **`netstat`** - Muestra estadísticas de red. [[netstat]]  -
 106. **`nmap`** - Escáner de redes. [[NMap]] ✅
-107. **`nmcli`** - Herramienta de línea de comandos para NetworkManager.
+107. **`nmcli`** - Herramienta de línea de comandos para NetworkManager. [[nmcli]] ✅
 108. **`nmtui`** - Interfaz de usuario en modo texto para NetworkManager.
 109. **`nohup`** - Ejecuta un comando sin colgarse cuando se cierra la sesión.
 110. **`nslookup`** - Consulta información sobre nombres de dominio.
@@ -124,57 +124,58 @@
 121. **`read`** - Lee una línea desde la entrada estándar.
 122. **`reboot`** - Reinicia el sistema.
 123. **`rename`** - Cambia nombres. [[rename]] ✅
-124. **`renice`** - Cambia la prioridad de los procesos.
-125. **`ripgrep`** - Herramienta diseñada para buscar patrones de texto  [[ripgrep]] ✅
-126. **`rm`** - Elimina archivos y directorios. [[rm]] ✅
-127. **`rmdir`** - Elimina directorios vacíos.
-128. **`rsync`** - Sincroniza archivos y directorios. [[rsync]] ✅
-129. **`scp`** - Copia archivos entre hosts usando SSH. [[scp]] ✅
-130. **`sed`** - Editor de flujo para procesamiento de texto. [[sed]] ✅
-131. **`shutdown`** - Apaga o reinicia el sistema.
-132. **`sleep`** - Suspende la ejecución durante un intervalo de tiempo.
-133. **`sort`** - Ordena líneas en archivos de texto. [[sort]] ✅
-134. **`ss`** - Muestra estadísticas de sockets.
-135. **`ssh`** - Conecta a un host remoto a través de SSH. [[SSH]] ✅
-136. **`stat`** - Muestra información sobre archivos y directorios.
-137. **`stow`** - Gestionar enlaces simbólicos para organizar archivos [[stow_xstow]] ✅
-138. **`stty`** - Cambia o muestra configuraciones del terminal.
-139. **`tail`** - Muestra las últimas líneas de un archivo. [[tail]] ✅
-140. **`tar`** - Archiva y descomprime archivos. [[tar]] -
-141. **`tee`** - Lee desde la entrada estándar y escribe a la salida estándar y archivos. [[tee]] ✅
-142. **`test`** - Evalúa expresiones condicionales.
-143. **`time`** - Mide el tiempo de ejecución de un comando.
-144. **`timeout`** - Ejecuta un comando con un límite de tiempo.
-145. **`top`** - Muestra procesos en tiempo real.
-146. **`touch`** - Cambia la fecha y hora de acceso y modificación de archivos. [[touch]] ✅
-147. **`tr`** - Traduce o elimina caracteres.
-148. **`tty`** - Muestra el nombre del terminal.
-149. **`umount`** - Desmonta sistemas de archivos.
-150. **`uname`** - Muestra información sobre el sistema. 
-151. **`uniq`** - Elimina líneas duplicadas en archivos siempre que estén seguidas. [[uniq]] ✅
-152. **`unzip`** - Descomprime archivos ZIP.
-153. **`uptime`** - Muestra el tiempo de actividad del sistema.
-154. **`useradd`** - Agrega un nuevo usuario. [[useradd]] ✅
-155. **`userdel`** - Elimina una cuenta de usuario.
-156. **`usermod`** - Modifica una cuenta de usuario.
-157.  **`usermode`** Modificar cuentas de usuario existentes [[usermode]]  ✅
-158. **`w`** - Muestra quién está conectado y qué están haciendo.
-159. **`wall`** - Envía un mensaje a todos los usuarios.
-160. **`watch`** - Ejecuta un comando periódicamente y muestra su salida.
-161. **`wc`** - Cuenta líneas, palabras y caracteres en archivos. [[wc]] ✅
-162. **`wget`** - Descarga archivos desde la web. [[wget]] ✅
-163. **`which`** - Muestra la ubicación de los comandos ejecutables.
-164. **`who`** - Muestra información sobre los usuarios conectados.
-165. **`whoami`** - Muestra el nombre del usuario actual.
-166. **`xargs`** - Construye y ejecuta comandos desde la entrada estándar.
-167. **`xstow`** - Gestionar enlaces simbólicos para organizar archivos [[stow_xstow]] ✅
-168. **`zip`** - Comprime archivos en formato ZIP. [[zip]] -
-169. **`zipinfo`** - Muestra información sobre archivos ZIP.
-170. **`zcat`** - Muestra el contenido de archivos comprimidos con gzip.
-171. **`zgrep`** - Busca patrones en archivos comprimidos con gzip.
-172. **`zless`** - Muestra archivos comprimidos con gzip página por página.
-173. **`zmore`** - Muestra archivos comprimidos con gzip página por página (similar a `less`).
-174. **`znew`** - Recompone archivos comprimidos con gzip en un formato más reciente.
+124. **`rfkill`** - Herramienta para gestionar dispositivos de radiofrecuencia . [[rfkill]]  ✅
+125. **`renice`** - Cambia la prioridad de los procesos.
+126. **`ripgrep`** - Herramienta diseñada para buscar patrones de texto  [[ripgrep]] ✅
+127. **`rm`** - Elimina archivos y directorios. [[rm]] ✅
+128. **`rmdir`** - Elimina directorios vacíos.
+129. **`rsync`** - Sincroniza archivos y directorios. [[rsync]] ✅
+130. **`scp`** - Copia archivos entre hosts usando SSH. [[scp]] ✅
+131. **`sed`** - Editor de flujo para procesamiento de texto. [[sed]] ✅
+132. **`shutdown`** - Apaga o reinicia el sistema.
+133. **`sleep`** - Suspende la ejecución durante un intervalo de tiempo.
+134. **`sort`** - Ordena líneas en archivos de texto. [[sort]] ✅
+135. **`ss`** - Muestra estadísticas de sockets.
+136. **`ssh`** - Conecta a un host remoto a través de SSH. [[SSH]] ✅
+137. **`stat`** - Muestra información sobre archivos y directorios.
+138. **`stow`** - Gestionar enlaces simbólicos para organizar archivos [[stow_xstow]] ✅
+139. **`stty`** - Cambia o muestra configuraciones del terminal.
+140. **`tail`** - Muestra las últimas líneas de un archivo. [[tail]] ✅
+141. **`tar`** - Archiva y descomprime archivos. [[tar]] -
+142. **`tee`** - Lee desde la entrada estándar y escribe a la salida estándar y archivos. [[tee]] ✅
+143. **`test`** - Evalúa expresiones condicionales.
+144. **`time`** - Mide el tiempo de ejecución de un comando.
+145. **`timeout`** - Ejecuta un comando con un límite de tiempo.
+146. **`top`** - Muestra procesos en tiempo real.
+147. **`touch`** - Cambia la fecha y hora de acceso y modificación de archivos. [[touch]] ✅
+148. **`tr`** - Traduce o elimina caracteres. [[tr]]
+149. **`tty`** - Muestra el nombre del terminal.
+150. **`umount`** - Desmonta sistemas de archivos.
+151. **`uname`** - Muestra información sobre el sistema. 
+152. **`uniq`** - Elimina líneas duplicadas en archivos siempre que estén seguidas. [[uniq]] ✅
+153. **`unzip`** - Descomprime archivos ZIP.
+154. **`uptime`** - Muestra el tiempo de actividad del sistema.
+155. **`useradd`** - Agrega un nuevo usuario. [[useradd]] ✅
+156. **`userdel`** - Elimina una cuenta de usuario.
+157. **`usermod`** - Modifica una cuenta de usuario.
+158.  **`usermode`** Modificar cuentas de usuario existentes [[usermode]]  ✅
+159. **`w`** - Muestra quién está conectado y qué están haciendo.
+160. **`wall`** - Envía un mensaje a todos los usuarios.
+161. **`watch`** - Ejecuta un comando periódicamente y muestra su salida.
+162. **`wc`** - Cuenta líneas, palabras y caracteres en archivos. [[wc]] ✅
+163. **`wget`** - Descarga archivos desde la web. [[wget]] ✅
+164. **`which`** - Muestra la ubicación de los comandos ejecutables.
+165. **`who`** - Muestra información sobre los usuarios conectados.
+166. **`whoami`** - Muestra el nombre del usuario actual.
+167. **`xargs`** - Construye y ejecuta comandos desde la entrada estándar.
+168. **`xstow`** - Gestionar enlaces simbólicos para organizar archivos [[stow_xstow]] ✅
+169. **`zip`** - Comprime archivos en formato ZIP. [[zip]] -
+170. **`zipinfo`** - Muestra información sobre archivos ZIP.
+171. **`zcat`** - Muestra el contenido de archivos comprimidos con gzip.
+172. **`zgrep`** - Busca patrones en archivos comprimidos con gzip.
+173. **`zless`** - Muestra archivos comprimidos con gzip página por página.
+174. **`zmore`** - Muestra archivos comprimidos con gzip página por página (similar a `less`).
+175. **`znew`** - Recompone archivos comprimidos con gzip en un formato más reciente.
 
 ---
 
