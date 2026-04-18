@@ -12,6 +12,12 @@ $mkdir .vim
 vim vimrc #crear el archivo de configuracion 
 ```
 
+### Herramienta para que copie al portapapeles
+
+```bash
+$apt install xclip
+```
+
 ir al repo : https://github.com/junegunn/vim-plug
 en el archivo **vimrc** poner las siguientes lineas :
 
