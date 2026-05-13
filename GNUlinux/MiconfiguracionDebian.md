@@ -90,6 +90,15 @@ rm -rf ~/.local/share/nvim
 sudo apt install kcalc
 ```
 
+## Libre wolf
+
+```
+sudo apt install extrepo    # Repositorio Externos para librewolf
+sudo extrepo enable librewolf    # Habilitamos 
+sudo apt update
+sudo apt install librewolf -y
+```
+
 ## LSD
 
 https://github.com/lsd-rs/lsd/releases

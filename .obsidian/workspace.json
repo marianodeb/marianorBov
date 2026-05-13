@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GNUlinux/Comandos.md",
+                "file": "Electronica/medicionTransistor.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Comandos"
+              "title": "medicionTransistor"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GNUlinux/Comandos.md",
+                "file": "Electronica/medicionTransistor.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Comandos"
+              "title": "Enlaces entrantes de medicionTransistor"
             }
           },
           {
@@ -183,11 +183,20 @@
   },
   "active": "f5902c0514b7a759",
   "lastOpenFiles": [
-    "GNUlinux/comandos/nmcli.md",
+    "Electronica/imagenes/transistoresbjtmosfetigbt3.png",
+    "Electronica/imagenes/Gemini_Generated_Image_9vkepe9vkepe9vke.png",
+    "Electronica/tipsmedicionMultimetro.md",
+    "transistoresII.md",
+    "transistores.md",
+    "tr.md",
+    "Electronica/medicionTransistor.md",
+    "Proyectos/Calendario de siembra.md",
+    "M_Notas.md",
+    "procesadores.md",
     "GNUlinux/Comandos.md",
+    "GNUlinux/comandos/nmcli.md",
     "electricidad/Tablero serie.md",
     "Electronica/Homelab server.md",
-    "tr.md",
     "Electronica/ESP32.md",
     "Electronica/Arduino.md",
     "Programacion/Lua.md",
@@ -201,14 +210,6 @@
     "GNUlinux/Wifi test.md",
     "GNUlinux/REDES.md",
     "GNUlinux/Raspberrypy.md",
-    "GNUlinux/PATH.md",
-    "GNUlinux/mpd.md",
-    "GNUlinux/MiconfiguracionDebian.md",
-    "GNUlinux/La línea de comandos de Linux.md",
-    "GNUlinux/kitty_confi.md",
-    "GNUlinux/indentificar_dispositivos.md",
-    "GNUlinux/gpg.md",
-    "GNUlinux/Gestores_de_paketes.md",
     "Electronica",
     "Sin título.canvas",
     "Sin título 2.base",
