@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Electronica/medicionTransistor.md",
-                "mode": "preview",
+                "file": "Electronica/guiamedcionMosfet.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "medicionTransistor"
+              "title": "guiamedcionMosfet"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "91d9f5310d47f99e",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Electronica/medicionTransistor.md",
+                "file": "Electronica/guiamedcionMosfet.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de medicionTransistor"
+              "title": "Enlaces entrantes de guiamedcionMosfet"
             }
           },
           {
@@ -167,7 +168,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,13 +185,13 @@
   },
   "active": "f5902c0514b7a759",
   "lastOpenFiles": [
+    "Electronica/medicionTransistor.md",
     "Electronica/imagenes/transistoresbjtmosfetigbt3.png",
     "Electronica/imagenes/Gemini_Generated_Image_9vkepe9vkepe9vke.png",
     "Electronica/tipsmedicionMultimetro.md",
     "transistoresII.md",
     "transistores.md",
     "tr.md",
-    "Electronica/medicionTransistor.md",
     "Proyectos/Calendario de siembra.md",
     "M_Notas.md",
     "procesadores.md",

@@ -509,7 +509,9 @@ Resumen para el diagnóstico con multímetro (en modo **Diodo**):
 
 
 
-
+Nota:
+Los transistores BJT: la base entre colector y emisor dependiendo si es pnp o npn debe medir como un diodo
+Los transistores MOSFET: el GATE (compuerta que seria como la base de los BJT) no mide con DRAIN y SOURCE pero entre DRAIN (Drenador) Y SOURCE (Fuente) debe medir en un sentido dependiendo si es canal N o P
 
 
 
