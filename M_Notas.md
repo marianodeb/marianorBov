@@ -1,7 +1,7 @@
 
 
 
-**maquinas virtyales**
+**maquinas virtuales**
 debianbspwm
     #bspwm
     $alfi #ricarda
@@ -37,6 +37,13 @@ ba$$hell13
 otisinmortal01/02/24
 AVTX YP6M 4A44 NR34 Z4DT CYT2 9NJX 60MZ
 
+
+---
+
+LPFPLAY
+
+fulbi202613K
+2022lgk4@gmail.com
 ---
 
 **wordpress**
