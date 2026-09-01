@@ -150,8 +150,10 @@ Bajar el archivo: lsd-musl_1.1.5_amd64.deb
 O descargarlo con curl:
 
 ```bash
-curl -LO https://github.com/lsd-rs/lsd/releases/download/v1.1.5/lsd-musl_1.1.5_amd64.deb
+curl -LO https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd-musl_1.2.0_amd64.deb
 ```
+
+
 
 ### Fastfetch
 
@@ -187,6 +189,12 @@ sudo snap install snapd
 sudo snap install gtkpod
 ```
 ## Monitoreos del hard
+
+### Mission Center
+
+```bash
+flatpak install flathub io.missioncenter.MissionCenter
+```
 
 ### CPU-X
 

@@ -664,6 +664,7 @@ Plug 'tpope/vim-fugitive'
 ---
 
 ### **Script de configuración con plugins**
+
 Aquí tienes un ejemplo de cómo configurar Neovim con estos plugins usando `vim-plug`:
 
 ```bash

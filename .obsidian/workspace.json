@@ -8,13 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "074659509f5dd144",
+            "id": "4026813a48b718b3",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "type": "markdown",
+              "state": {
+                "file": "Programacion/TypeScript.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TypeScript"
             }
           }
         ]
@@ -37,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Explorador de archivos"
@@ -179,8 +185,13 @@
       "obsidian-excalidraw-plugin:Nuevo Bosquejo": false
     }
   },
-  "active": "074659509f5dd144",
+  "active": "4026813a48b718b3",
   "lastOpenFiles": [
+    "Programacion/TypeScritp.md",
+    "Guias/GuiaMarkdown.md",
+    "notasSueltas/icon.md",
+    "notasSueltas/2ar.md",
+    "M_Notas.md",
     "GNUlinux/MiconfiguracionDebian.md",
     "GNUlinux/aplicacionesH/cmus.md",
     "GNUlinux/aplicacionesH/FFmpeg.md",
@@ -193,7 +204,6 @@
     "transistores.md",
     "tr.md",
     "Proyectos/Calendario de siembra.md",
-    "M_Notas.md",
     "procesadores.md",
     "GNUlinux/Comandos.md",
     "GNUlinux/comandos/nmcli.md",
@@ -205,10 +215,6 @@
     "Programacion/Programación.md",
     "Programacion/HTML.md",
     "Programacion/Git.md",
-    "GNUlinux/comandos/ln.md",
-    "GNUlinux/Bash born again shell.md",
-    "GNUlinux/GNULinux.md",
-    "GNUlinux/terminal_conf.md",
     "Electronica",
     "Sin título.canvas",
     "Sin título 2.base",
