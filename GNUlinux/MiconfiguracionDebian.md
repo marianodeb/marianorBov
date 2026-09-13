@@ -196,6 +196,18 @@ sudo snap install gtkpod
 flatpak install flathub io.missioncenter.MissionCenter
 ```
 
+### TypingMaster
+
+```bash
+flatpak install flathub com.ktechpit.typingmaster
+```
+
+### Brief  
+
+```bash
+flatpak install flathub io.github.shonebinu.Brief
+``` 
+
 ### CPU-X
 
 Herramienta para monitorear cpu
@@ -203,6 +215,7 @@ Herramienta para monitorear cpu
 ```bash
 sudo apt install cpu-x
 ```
+
 ### gsmatcontrol
 
 Herramienta para monitorear y testear estado de unidades de almacenamineto
